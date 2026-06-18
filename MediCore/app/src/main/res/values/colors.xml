@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="medicore_blue">#0A3D91</color>
+    <color name="medicore_blue_dark">#082B63</color>
+    <color name="medicore_ice">#F5FAFF</color>
+    <color name="medicore_line">#D8E6F7</color>
+    <color name="medicore_text">#132238</color>
+</resources>

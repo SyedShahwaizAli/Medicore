@@ -1,0 +1,45 @@
+MediCore - CS-512 App Development Project
+Student: Shahwaiz Ali
+AG No: 2023-ag-10145
+
+Project Theme:
+Deep blue and white medical dashboard style with an animated splash screen.
+
+Firebase Setup:
+1. Firebase project name: MediCore
+2. Android package name: com.shahwaiz.medicore
+3. google-services.json must stay inside the app folder.
+4. Enable Authentication > Email/Password.
+5. Enable Firestore Database in test mode for the demo.
+
+Demo Login:
+Patient:
+email: patient@medicore.pk
+password: 123456
+
+Doctor:
+email: doctor@medicore.pk
+password: 123456
+
+If Firebase Auth accounts are not created yet, use the "Open Demo Patient" or
+"Open Demo Doctor" button. The screens still show the full workflow, and the
+app writes demo records to Firestore when Firestore test mode is enabled.
+
+Implemented Requirements:
+1. Patient creation and profile update
+2. Patient home/profile view
+3. Patient bill history
+4. Patient treatment history
+5. Patient appointment request
+6. Doctor profile
+7. Pending appointments against doctor ID
+8. Today's appointments with approve/reject/complete actions
+9. History update with disease, prescription and progress
+10. Bill generation
+11. Doctor view of treated patient history
+
+Unique Points To Mention:
+- Single role-based app instead of separate patient/doctor apps.
+- Animated splash screen with MediCore identity.
+- Firestore-backed records with demo seeding for quick checking.
+- Receipt-style bill generation and status badges for appointments.

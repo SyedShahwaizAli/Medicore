@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MediCore Submission Documentation</title>
+<style>
+@page { size: A4; margin: 18mm 17mm; }
+body { font-family: Arial, Helvetica, sans-serif; color: #132238; line-height: 1.45; }
+h1 { color: #0A3D91; text-align: center; font-size: 28px; margin: 0 0 8px; letter-spacing: 0; }
+.course { text-align: center; color: #082B63; font-size: 18px; margin: 0 0 22px; border: 0; padding: 0; }
+h2 { color: #0A3D91; font-size: 17px; margin: 18px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #D8E6F7; page-break-after: avoid; }
+p { font-size: 11.5px; margin: 4px 0; }
+.bullet { margin-left: 16px; }
+.qa { font-weight: 600; }
+.gap { height: 5px; }
+</style>
+</head>
+<body>
+<h1>MEDICORE - MEDICAL MANAGEMENT SYSTEM</h1>
+<h2 class='course'>CS-512 APP DEVELOPMENT PROJECT</h2>
+<div class="gap"></div>
+<p>Submitted By: Shahwaiz Ali</p>
+<p>AG No: 2023-ag-10145</p>
+<p>Submitted To: Sir Wasim Malik</p>
+<p>Technology: Android Studio, Java, Firebase Authentication, Cloud Firestore</p>
+<div class="gap"></div>
+<h2>1. INTRODUCTION</h2>
+<div class="gap"></div>
+<p>MediCore is an Android-based Medical Management System designed to manage basic patient and doctor workflows in a clinic or hospital environment. The application provides role-based features for patients and doctors inside a single app.</p>
+<div class="gap"></div>
+<p>The patient can create and view a profile, request appointments, view completed treatment history, and check bill history. The doctor can view his profile, manage pending and today&#39;s appointments, update patient treatment records, generate bills, and view patient treatment history.</p>
+<div class="gap"></div>
+<h2>2. PROJECT OBJECTIVE</h2>
+<div class="gap"></div>
+<p>The objective of MediCore is to provide a simple and user-friendly medical management application.</p>
+<div class="gap"></div>
+<p>Main objectives:</p>
+<p class='bullet'>- Provide role-based access for Patient and Doctor.</p>
+<p class='bullet'>- Allow patient profile creation and viewing.</p>
+<p class='bullet'>- Allow patients to request appointments.</p>
+<p class='bullet'>- Allow doctors to approve, reject, or complete appointments.</p>
+<p class='bullet'>- Store and display treatment history.</p>
+<p class='bullet'>- Generate and view bills.</p>
+<p class='bullet'>- Use Firebase as a cloud database.</p>
+<p class='bullet'>- Present a clean deep blue and white medical interface.</p>
+<div class="gap"></div>
+<h2>3. UNIQUE FEATURES</h2>
+<div class="gap"></div>
+<p class='bullet'>- Animated splash screen with MediCore branding.</p>
+<p class='bullet'>- Single role-based app for both patient and doctor.</p>
+<p class='bullet'>- Deep blue and white professional medical UI.</p>
+<p class='bullet'>- Doctor dashboard with quick statistics.</p>
+<p class='bullet'>- Appointment status badges.</p>
+<p class='bullet'>- Receipt-style bill generation.</p>
+<p class='bullet'>- Firestore demo data for quick checking.</p>
+<p class='bullet'>- Student identity included in the app.</p>
+<div class="gap"></div>
+<h2>4. TOOLS AND TECHNOLOGIES</h2>
+<div class="gap"></div>
+<p class='bullet'>- Android Studio: Development environment</p>
+<p class='bullet'>- Java: Programming language</p>
+<p class='bullet'>- Firebase Authentication: Email/password login</p>
+<p class='bullet'>- Cloud Firestore: Database</p>
+<p class='bullet'>- Gradle: Build system</p>
+<p class='bullet'>- Android Emulator/Phone: Testing</p>
+<div class="gap"></div>
+<h2>5. APPLICATION THEME</h2>
+<div class="gap"></div>
+<p>The application uses a deep blue and white theme. Blue was selected because it represents trust, safety, and medical care.</p>
+<div class="gap"></div>
+<p>Main colors:</p>
+<p class='bullet'>- Deep Blue: #0A3D91</p>
+<p class='bullet'>- Dark Blue: #082B63</p>
+<p class='bullet'>- White: #FFFFFF</p>
+<p class='bullet'>- Light Background: #F5FAFF</p>
+<div class="gap"></div>
+<h2>6. USERS OF THE SYSTEM</h2>
+<div class="gap"></div>
+<p>Patient:</p>
+<p class='bullet'>- Create or update profile</p>
+<p class='bullet'>- View profile</p>
+<p class='bullet'>- Request appointment</p>
+<p class='bullet'>- View bill history</p>
+<p class='bullet'>- View treatment history</p>
+<div class="gap"></div>
+<p>Doctor:</p>
+<p class='bullet'>- View doctor profile</p>
+<p class='bullet'>- View pending appointments</p>
+<p class='bullet'>- View today&#39;s appointments</p>
+<p class='bullet'>- Approve, reject, or complete appointments</p>
+<p class='bullet'>- Update patient disease, prescription, and progress</p>
+<p class='bullet'>- Generate patient bill</p>
+<p class='bullet'>- View patient treatment history</p>
+<div class="gap"></div>
+<h2>7. FUNCTIONAL REQUIREMENTS</h2>
+<div class="gap"></div>
+<p>Patient Requirements:</p>
+<p class='bullet'>- Patient Creation: Patient can create or update profile.</p>
+<p class='bullet'>- Patient Home: Patient can view profile information.</p>
+<p class='bullet'>- Bills History: Patient can view bill history of completed appointments.</p>
+<p class='bullet'>- Treatment History: Patient can view treatment records.</p>
+<p class='bullet'>- Patient Appointment: Patient can request an appointment.</p>
+<div class="gap"></div>
+<p>Doctor Requirements:</p>
+<p class='bullet'>- Doctor Profile: Doctor can view his own profile.</p>
+<p class='bullet'>- Pending Appointments: Doctor can view pending appointments against doctor ID.</p>
+<p class='bullet'>- Today&#39;s Appointments: Doctor can view current day appointments.</p>
+<p class='bullet'>- Appointment Action: Doctor can approve, reject, or complete appointments.</p>
+<p class='bullet'>- History Update: Doctor can update prescription, disease, and progress.</p>
+<p class='bullet'>- Generate Bill: Doctor can generate patient bill.</p>
+<p class='bullet'>- Patient History: Doctor can view treatment history of treated patients.</p>
+<div class="gap"></div>
+<h2>8. FIREBASE CONFIGURATION</h2>
+<div class="gap"></div>
+<p>Firebase Authentication:</p>
+<p class='bullet'>- Enable Email/Password sign-in.</p>
+<div class="gap"></div>
+<p>Demo accounts:</p>
+<p class='bullet'>- Patient: patient@medicore.pk / 123456</p>
+<p class='bullet'>- Doctor: doctor@medicore.pk / 123456</p>
+<div class="gap"></div>
+<p>Cloud Firestore:</p>
+<p class='bullet'>- Used for storing patients, appointments, treatments, and bills.</p>
+<p class='bullet'>- Firestore can be started in test mode for demonstration.</p>
+<div class="gap"></div>
+<h2>9. DATABASE DESIGN</h2>
+<div class="gap"></div>
+<p>Collection: patients</p>
+<p>Fields:</p>
+<p class='bullet'>- name</p>
+<p class='bullet'>- email</p>
+<p class='bullet'>- age</p>
+<p class='bullet'>- phone</p>
+<p class='bullet'>- bloodGroup</p>
+<p class='bullet'>- address</p>
+<div class="gap"></div>
+<p>Collection: appointments</p>
+<p>Fields:</p>
+<p class='bullet'>- patientId</p>
+<p class='bullet'>- patientName</p>
+<p class='bullet'>- doctorId</p>
+<p class='bullet'>- date</p>
+<p class='bullet'>- time</p>
+<p class='bullet'>- reason</p>
+<p class='bullet'>- status</p>
+<div class="gap"></div>
+<p>Collection: treatments</p>
+<p>Fields:</p>
+<p class='bullet'>- patientId</p>
+<p class='bullet'>- patientName</p>
+<p class='bullet'>- doctorId</p>
+<p class='bullet'>- date</p>
+<p class='bullet'>- disease</p>
+<p class='bullet'>- prescription</p>
+<p class='bullet'>- progress</p>
+<div class="gap"></div>
+<p>Collection: bills</p>
+<p>Fields:</p>
+<p class='bullet'>- patientId</p>
+<p class='bullet'>- patientName</p>
+<p class='bullet'>- doctorId</p>
+<p class='bullet'>- date</p>
+<p class='bullet'>- doctorFee</p>
+<p class='bullet'>- medicine</p>
+<p class='bullet'>- lab</p>
+<p class='bullet'>- total</p>
+<p class='bullet'>- status</p>
+<div class="gap"></div>
+<h2>10. SYSTEM WORKFLOW</h2>
+<div class="gap"></div>
+<p>Patient Workflow:</p>
+<p>1. Patient opens app.</p>
+<p>2. Animated splash screen appears.</p>
+<p>3. Patient selects Patient role.</p>
+<p>4. Patient logs in or opens demo patient mode.</p>
+<p>5. Patient views profile.</p>
+<p>6. Patient creates or updates profile.</p>
+<p>7. Patient requests appointment.</p>
+<p>8. Patient views bill history.</p>
+<p>9. Patient views treatment history.</p>
+<div class="gap"></div>
+<p>Doctor Workflow:</p>
+<p>1. Doctor opens app.</p>
+<p>2. Doctor selects Doctor role.</p>
+<p>3. Doctor logs in or opens demo doctor mode.</p>
+<p>4. Doctor views dashboard.</p>
+<p>5. Doctor checks pending appointments.</p>
+<p>6. Doctor checks today&#39;s appointments.</p>
+<p>7. Doctor approves, rejects, or completes appointments.</p>
+<p>8. Doctor updates patient history.</p>
+<p>9. Doctor generates bill.</p>
+<p>10. Doctor views patient history.</p>
+<div class="gap"></div>
+<h2>11. SCREENS</h2>
+<div class="gap"></div>
+<h2>1. Animated Splash Screen</h2>
+<p>2. Role-Based Login Screen</p>
+<h2>3. Patient Home Screen</h2>
+<h2>4. Patient Creation Screen</h2>
+<h2>5. Patient Appointment Screen</h2>
+<h2>6. Bills History Screen</h2>
+<h2>7. Treatment History Screen</h2>
+<h2>8. Doctor Dashboard Screen</h2>
+<h2>9. Pending Appointments Screen</h2>
+<p>10. Today&#39;s Appointments Screen</p>
+<h2>11. History Update Screen</h2>
+<h2>12. Generate Bill Screen</h2>
+<h2>13. Patient History Screen</h2>
+<div class="gap"></div>
+<h2>12. TESTING</h2>
+<div class="gap"></div>
+<p>Tested features:</p>
+<p class='bullet'>- App launch</p>
+<p class='bullet'>- Splash screen</p>
+<p class='bullet'>- Patient role selection</p>
+<p class='bullet'>- Doctor role selection</p>
+<p class='bullet'>- Demo patient opening</p>
+<p class='bullet'>- Demo doctor opening</p>
+<p class='bullet'>- Patient profile saving</p>
+<p class='bullet'>- Appointment request</p>
+<p class='bullet'>- Pending appointment view</p>
+<p class='bullet'>- Appointment approval/rejection/completion</p>
+<p class='bullet'>- Treatment update</p>
+<p class='bullet'>- Bill generation</p>
+<p class='bullet'>- Bill history view</p>
+<p class='bullet'>- Treatment history view</p>
+<div class="gap"></div>
+<h2>13. HOW TO RUN</h2>
+<div class="gap"></div>
+<p>1. Open Android Studio.</p>
+<p>2. Open the MediCore project folder.</p>
+<p>3. Wait for Gradle sync.</p>
+<p>4. Make sure google-services.json is inside the app folder.</p>
+<p>5. Start emulator or connect Android phone.</p>
+<p>6. Click Run.</p>
+<p>7. Select Patient or Doctor role.</p>
+<div class="gap"></div>
+<h2>14. LIMITATIONS</h2>
+<div class="gap"></div>
+<p class='bullet'>- The app is designed for academic demonstration.</p>
+<p class='bullet'>- It uses simple role selection.</p>
+<p class='bullet'>- Firestore test mode is suitable for demo but not production.</p>
+<p class='bullet'>- Advanced admin management is not included.</p>
+<p class='bullet'>- PDF bill download is not included.</p>
+<div class="gap"></div>
+<h2>15. FUTURE ENHANCEMENTS</h2>
+<div class="gap"></div>
+<p class='bullet'>- Admin panel</p>
+<p class='bullet'>- Doctor registration</p>
+<p class='bullet'>- Multiple doctors</p>
+<p class='bullet'>- Appointment time slots</p>
+<p class='bullet'>- Push notifications</p>
+<p class='bullet'>- PDF bill download</p>
+<p class='bullet'>- Search and filter history</p>
+<p class='bullet'>- Profile image upload</p>
+<p class='bullet'>- Strong Firestore security rules</p>
+<div class="gap"></div>
+<h2>16. CONCLUSION</h2>
+<div class="gap"></div>
+<p>MediCore is a complete Android Medical Management System that fulfills the patient and doctor requirements given in the project. It includes patient creation, appointment handling, bill history, treatment history, doctor profile, appointment approval, history update, bill generation, and patient history.</p>
+<div class="gap"></div>
+<p>The project uses Firebase Authentication and Cloud Firestore, making it practical and cloud-based. Its animated splash screen, role-based design, dashboard layout, and clean medical theme make it suitable for CS-512 App Development submission.</p>
+<div class="gap"></div>
+<h2>17. VIVA POINTS</h2>
+<div class="gap"></div>
+<p class='bullet'>- App name: MediCore</p>
+<p class='bullet'>- Developer: Shahwaiz Ali</p>
+<p class='bullet'>- AG No: 2023-ag-10145</p>
+<p class='bullet'>- Main roles: Patient and Doctor</p>
+<p class='bullet'>- Language: Java</p>
+<p class='bullet'>- Database: Cloud Firestore</p>
+<p class='bullet'>- Authentication: Firebase Authentication</p>
+<p class='bullet'>- Unique feature: Animated splash screen</p>
+<p class='bullet'>- Theme: Deep Blue and White</p>
+<p class='bullet'>- Main collections: patients, appointments, treatments, bills</p>
+<div class="gap"></div>
+<p>Possible Questions:</p>
+<div class="gap"></div>
+<p class='qa'>Q: Why did you use Firebase?</p>
+<p class='qa'>A: Firebase provides authentication and cloud database support without needing a separate backend.</p>
+<div class="gap"></div>
+<p class='qa'>Q: What is Firestore?</p>
+<p class='qa'>A: Firestore is a NoSQL cloud database that stores data in collections and documents.</p>
+<div class="gap"></div>
+<p class='qa'>Q: What are the main roles?</p>
+<p class='qa'>A: Patient and Doctor.</p>
+<div class="gap"></div>
+<p class='qa'>Q: What is the unique feature?</p>
+<p class='qa'>A: Animated splash screen with role-based dashboard UI.</p>
+<div class="gap"></div>
+<p class='qa'>Q: How are appointment statuses handled?</p>
+<p class='qa'>A: Each appointment has a status field such as Pending, Approved, Rejected, or Completed.</p>
+<div class="gap"></div>
+<div class="gap"></div>
+
+</body>
+</html>
